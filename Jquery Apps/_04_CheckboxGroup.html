@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Checkbox Group </title>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap-theme.min.css" />
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script>
+        $(function () { 
+            $("#GetInfo").click(function () { 
+                Get("lessons");
+             }) ;
+            $("#GetInfo2").click(function () { 
+                Get("other");
+             });
+
+       function Get(selectedNames) { 
+            var selectedOptions =  $("input[name='"+selectedNames+"']:checked");
+            var resString = "";
+            if (selectedOptions.length>0) {
+                selectedOptions.each(function (index,element) { 
+                    resString+="<br>" +$(element).val(); 
+                });
+
+            }
+            $("#divRes").html(resString);
+        }
+    });
+    </script>
+</head>
+
+<body>
+    <div class="container">
+
+        <div class="row">
+
+            <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+                <div class="btn-group-toggle" data-toggle="buttons">
+
+                    <input type="checkbox" name="lessons" value="Jquery"> Jquery
+                    <input type="checkbox" name="lessons" value="Angular"> Angular
+                    <input type="checkbox" name="lessons" value="Node"> Node
+
+                    <br />
+
+                    <input type="checkbox" name="other" value="ASP"> ASP
+                    <input type="checkbox" name="other" value="JSP"> JSP
+                    <input type="checkbox" name="other" value="JSF"> JSF
+
+
+                    <button type="button" id="GetInfo" class="btn btn-lg btn-danger">Getir</button>
+                    <button type="button" id="GetInfo2" class="btn btn-lg btn-danger">Getir2</button>
+
+
+                    <div id="divRes"></div>
+
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+</body>
+
+</html>

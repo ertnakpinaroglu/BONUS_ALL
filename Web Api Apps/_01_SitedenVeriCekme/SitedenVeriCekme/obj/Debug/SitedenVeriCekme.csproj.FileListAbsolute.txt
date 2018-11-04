@@ -1,0 +1,6 @@
+C:\Users\yazil\Desktop\ALL APPS\Web Api Apps\_01_SitedenVeriCekme\SitedenVeriCekme\bin\Debug\SitedenVeriCekme.exe.config
+C:\Users\yazil\Desktop\ALL APPS\Web Api Apps\_01_SitedenVeriCekme\SitedenVeriCekme\bin\Debug\SitedenVeriCekme.exe
+C:\Users\yazil\Desktop\ALL APPS\Web Api Apps\_01_SitedenVeriCekme\SitedenVeriCekme\bin\Debug\SitedenVeriCekme.pdb
+C:\Users\yazil\Desktop\ALL APPS\Web Api Apps\_01_SitedenVeriCekme\SitedenVeriCekme\obj\Debug\SitedenVeriCekme.csproj.CoreCompileInputs.cache
+C:\Users\yazil\Desktop\ALL APPS\Web Api Apps\_01_SitedenVeriCekme\SitedenVeriCekme\obj\Debug\SitedenVeriCekme.exe
+C:\Users\yazil\Desktop\ALL APPS\Web Api Apps\_01_SitedenVeriCekme\SitedenVeriCekme\obj\Debug\SitedenVeriCekme.pdb

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title> Mouse Detected </title>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap-theme.min.css" />
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script>
+    $(function () { 
+        var res = "";
+        $("#btnClick").mouseup(function (event) {
+            switch (event.which) {
+                case 1:res+="Left Clicked"; break;
+                case 2:res+="Middle Clicked"; break;
+                case 3:res+="Right Clicked"; break;
+                
+                default:
+                    break;
+            }
+            $("#divRes").html(res);
+        });
+        $("#btnCreate").click(function () { 
+            var comp = "<input type='text' value='Sahane'/> ";
+            $("#divRes").after(comp);
+        });
+        
+    });
+    </script>
+</head>
+<body>
+    <div class="container">
+        
+        <div class="row">
+            
+            <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+                
+                <button type="button" id="btnClick" class="btn btn-danger"> Hangisi </button>
+                
+         <button type="button" id="btnCreate" class="btn btn-info">Olusutr</button>
+                
+                <div id="divRes"></div>
+            </div>
+            
+        </div>
+        
+    </div>
+</body>
+</html>

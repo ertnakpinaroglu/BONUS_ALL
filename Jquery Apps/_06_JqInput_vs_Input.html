@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Jq Input vs Input </title>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap-theme.min.css" />
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script>
+        $(function () {
+
+            var allInput = $(":input");
+            allInput.each(function (index,element) {
+                alert($(element).val());
+            });
+        });
+    </script>
+</head>
+
+<body>
+    <div class="container">
+        
+        <div class="row">
+            
+            <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+                <div class="btn-group-toggle" data-toggle="buttons">
+                   
+                        <input type="checkbox" value="Text"> Text
+                   
+                </div>
+                <div class="btn-group btn-group-toggle" data-toggle="buttons">
+                    
+                        <input type="radio" value="Text2" > Text2
+                    
+                </div>
+                <select name="" id="" >
+                    <option value="Ertan">Ertan</option>
+                    <option value="Akpınaroglu"> Akoınaroglu </option>
+                </select>
+            </div>
+            
+        </div>
+        
+    </div>
+</body>
+
+</html>

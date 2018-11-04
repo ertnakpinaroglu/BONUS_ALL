@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Mouse Events On Jquery </title>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap-theme.min.css" />
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script>
+        $(function () { 
+
+            $("#btnEkle").on({
+                "click":function (event) { 
+                    $(".list-group").append("<li class='list-group-item active'>Text</li>");
+                },
+                "mouseover":function (event) {
+                    $("#list").append("<li class='list-group-item active'>Text</li>");
+                }
+            });
+            $("#list li").on({
+                
+                "mouseover":function (event) {
+                    $("#list").append("<li class='list-group-item active'>Text</li>");
+                },
+                "mouseout":function (event) { 
+                    $(".list-group li").remove($(this));
+                 }
+            });
+        });
+    </script>
+</head>
+<body>
+    <div class="container">
+        
+        <div class="row">
+            
+            
+            <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+                <ul class="list-group" id="list">
+                    
+                </ul>
+            </div>
+            
+            <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+                
+                <button id="btnEkle" type="button" class="btn btn-danger"> Ekle </button>
+                
+            </div>
+            
+        </div>
+        
+    </div>
+</body>
+</html>

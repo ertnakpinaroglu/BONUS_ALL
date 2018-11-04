@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Add Or remove Using On Juery </title>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap-theme.min.css" />
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
+    <script src="js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <style>
+        .BgColor{
+            background-color: brown;
+        }
+    </style>
+    <script>
+        $(function () {
+            $("#cbCheck").change(function () {  
+                if ($(this).is(":checked")) {
+                    $("#resDiv").addClass("BgColor");
+                } else {
+                    $("#resDiv").removeClass("BgColor");
+                }
+
+            });
+        });
+    </script>
+</head>
+
+<body>
+    <div class="container">
+        
+        <div class="row">
+            
+            <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+                <div class="btn-group-toggle" data-toggle="buttons">
+                    
+                   
+                        <input id="cbCheck" type="checkbox"> Background color
+                        <div id="resDiv" style="width: 250px; height: 250px;" ></div>
+                </div>
+            </div>
+            
+        </div>
+        
+    </div>
+</body>
+
+</html>
